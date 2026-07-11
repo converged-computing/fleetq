@@ -3,6 +3,7 @@ name: Fluxion
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -21,7 +22,7 @@ jobs:
       - name: make fluxion-test
         run: |
           docker run --rm -v "$PWD":/src -w /src "$FLUX_IMAGE" bash -lc '
-            export PATH=$PATH:/usr/local/go/bin
+            export PATH=$PATH:/usr/local/go/bin GOFLAGS=-buildvcs=false
             go version
             make fluxion-test
           '
@@ -35,7 +36,7 @@ jobs:
       - name: make fluxcore-test   # spins up a broker via `flux start` and submits real jobs
         run: |
           docker run --rm -v "$PWD":/src -w /src "$FLUX_IMAGE" bash -lc '
-            export PATH=$PATH:/usr/local/go/bin
+            export PATH=$PATH:/usr/local/go/bin GOFLAGS=-buildvcs=false
             make fluxcore-test
           '
 
@@ -48,7 +49,7 @@ jobs:
       - name: make all   # links the real matcher AND libflux dispatch into one binary
         run: |
           docker run --rm -v "$PWD":/src -w /src "$FLUX_IMAGE" bash -lc '
-            export PATH=$PATH:/usr/local/go/bin
+            export PATH=$PATH:/usr/local/go/bin GOFLAGS=-buildvcs=false
             make all
             test -x bin/fleetq
           '
