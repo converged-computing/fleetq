@@ -1,0 +1,100 @@
+{
+ "graph": {
+  "nodes": [
+   {
+    "id": "0",
+    "metadata": {
+     "basename": "cluster",
+     "exclusive": false,
+     "id": 0,
+     "name": "cluster0",
+     "paths": {
+      "containment": "/beta-sw"
+     },
+     "rank": -1,
+     "size": 1,
+     "type": "cluster",
+     "uniq_id": 0,
+     "unit": ""
+    }
+   },
+   {
+    "id": "1",
+    "metadata": {
+     "basename": "lammps",
+     "exclusive": false,
+     "id": 1,
+     "name": "lammps1",
+     "paths": {
+      "containment": "/beta-sw/lammps"
+     },
+     "rank": -1,
+     "size": 1,
+     "type": "lammps",
+     "uniq_id": 1,
+     "unit": ""
+    }
+   },
+   {
+    "id": "2",
+    "metadata": {
+     "basename": "openmp",
+     "exclusive": false,
+     "id": 2,
+     "name": "openmp2",
+     "paths": {
+      "containment": "/beta-sw/lammps/openmp"
+     },
+     "rank": -1,
+     "size": 1,
+     "type": "openmp",
+     "uniq_id": 2,
+     "unit": ""
+    }
+   },
+   {
+    "id": "3",
+    "metadata": {
+     "basename": "amber",
+     "exclusive": false,
+     "id": 3,
+     "name": "amber3",
+     "paths": {
+      "containment": "/beta-sw/amber"
+     },
+     "rank": -1,
+     "size": 1,
+     "type": "amber",
+     "uniq_id": 3,
+     "unit": ""
+    }
+   }
+  ],
+  "edges": [
+   {
+    "source": "0",
+    "target": "1",
+    "metadata": {
+     "name": "contains",
+     "subsystem": "containment"
+    }
+   },
+   {
+    "source": "1",
+    "target": "2",
+    "metadata": {
+     "name": "contains",
+     "subsystem": "containment"
+    }
+   },
+   {
+    "source": "0",
+    "target": "3",
+    "metadata": {
+     "name": "contains",
+     "subsystem": "containment"
+    }
+   }
+  ]
+ }
+}

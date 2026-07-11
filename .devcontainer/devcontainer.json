@@ -1,0 +1,7 @@
+{
+  "name": "fleetq (real Fluxion + river/Postgres)",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "customizations": { "vscode": { "extensions": ["golang.go"] } },
+  "postCreateCommand": "make db-up && echo 'real Fluxion: make fluxion; run: make run'"
+}

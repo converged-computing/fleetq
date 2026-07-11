@@ -1,0 +1,554 @@
+{
+  "graph": {
+    "edges": [
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "0",
+        "target": "1"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "1",
+        "target": "2"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "2",
+        "target": "3"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "4"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "5"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "6"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "7"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "8"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "9"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "10"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "11"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "1",
+        "target": "12"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "12",
+        "target": "13"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "13",
+        "target": "14"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "13",
+        "target": "15"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "13",
+        "target": "16"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "13",
+        "target": "17"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "13",
+        "target": "18"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "13",
+        "target": "19"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "13",
+        "target": "20"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "13",
+        "target": "21"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "0",
+        "metadata": {
+          "basename": "alpha",
+          "exclusive": false,
+          "id": 0,
+          "name": "alpha",
+          "paths": {
+            "containment": "/alpha"
+          },
+          "properties": {
+            "handle": "flux-operator://alpha",
+            "manager": "flux-operator"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "cluster",
+          "uniq_id": 0,
+          "unit": ""
+        }
+      },
+      {
+        "id": "1",
+        "metadata": {
+          "basename": "rack",
+          "exclusive": false,
+          "id": 0,
+          "name": "rack0",
+          "paths": {
+            "containment": "/alpha/rack0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "rack",
+          "uniq_id": 1,
+          "unit": ""
+        }
+      },
+      {
+        "id": "2",
+        "metadata": {
+          "basename": "node",
+          "exclusive": false,
+          "id": 0,
+          "name": "node0",
+          "paths": {
+            "containment": "/alpha/rack0/node0"
+          },
+          "rank": 0,
+          "size": 1,
+          "type": "node",
+          "uniq_id": 2,
+          "unit": ""
+        }
+      },
+      {
+        "id": "3",
+        "metadata": {
+          "basename": "socket",
+          "exclusive": false,
+          "id": 0,
+          "name": "socket0",
+          "paths": {
+            "containment": "/alpha/rack0/node0/socket0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "socket",
+          "uniq_id": 3,
+          "unit": ""
+        }
+      },
+      {
+        "id": "4",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 0,
+          "name": "core0",
+          "paths": {
+            "containment": "/alpha/rack0/node0/socket0/core0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 4,
+          "unit": ""
+        }
+      },
+      {
+        "id": "5",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 1,
+          "name": "core1",
+          "paths": {
+            "containment": "/alpha/rack0/node0/socket0/core1"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 5,
+          "unit": ""
+        }
+      },
+      {
+        "id": "6",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 2,
+          "name": "core2",
+          "paths": {
+            "containment": "/alpha/rack0/node0/socket0/core2"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 6,
+          "unit": ""
+        }
+      },
+      {
+        "id": "7",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 3,
+          "name": "core3",
+          "paths": {
+            "containment": "/alpha/rack0/node0/socket0/core3"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 7,
+          "unit": ""
+        }
+      },
+      {
+        "id": "8",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 4,
+          "name": "core4",
+          "paths": {
+            "containment": "/alpha/rack0/node0/socket0/core4"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 8,
+          "unit": ""
+        }
+      },
+      {
+        "id": "9",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 5,
+          "name": "core5",
+          "paths": {
+            "containment": "/alpha/rack0/node0/socket0/core5"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 9,
+          "unit": ""
+        }
+      },
+      {
+        "id": "10",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 6,
+          "name": "core6",
+          "paths": {
+            "containment": "/alpha/rack0/node0/socket0/core6"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 10,
+          "unit": ""
+        }
+      },
+      {
+        "id": "11",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 7,
+          "name": "core7",
+          "paths": {
+            "containment": "/alpha/rack0/node0/socket0/core7"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 11,
+          "unit": ""
+        }
+      },
+      {
+        "id": "12",
+        "metadata": {
+          "basename": "node",
+          "exclusive": false,
+          "id": 1,
+          "name": "node1",
+          "paths": {
+            "containment": "/alpha/rack0/node1"
+          },
+          "rank": 1,
+          "size": 1,
+          "type": "node",
+          "uniq_id": 12,
+          "unit": ""
+        }
+      },
+      {
+        "id": "13",
+        "metadata": {
+          "basename": "socket",
+          "exclusive": false,
+          "id": 0,
+          "name": "socket0",
+          "paths": {
+            "containment": "/alpha/rack0/node1/socket0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "socket",
+          "uniq_id": 13,
+          "unit": ""
+        }
+      },
+      {
+        "id": "14",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 0,
+          "name": "core0",
+          "paths": {
+            "containment": "/alpha/rack0/node1/socket0/core0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 14,
+          "unit": ""
+        }
+      },
+      {
+        "id": "15",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 1,
+          "name": "core1",
+          "paths": {
+            "containment": "/alpha/rack0/node1/socket0/core1"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 15,
+          "unit": ""
+        }
+      },
+      {
+        "id": "16",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 2,
+          "name": "core2",
+          "paths": {
+            "containment": "/alpha/rack0/node1/socket0/core2"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 16,
+          "unit": ""
+        }
+      },
+      {
+        "id": "17",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 3,
+          "name": "core3",
+          "paths": {
+            "containment": "/alpha/rack0/node1/socket0/core3"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 17,
+          "unit": ""
+        }
+      },
+      {
+        "id": "18",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 4,
+          "name": "core4",
+          "paths": {
+            "containment": "/alpha/rack0/node1/socket0/core4"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 18,
+          "unit": ""
+        }
+      },
+      {
+        "id": "19",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 5,
+          "name": "core5",
+          "paths": {
+            "containment": "/alpha/rack0/node1/socket0/core5"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 19,
+          "unit": ""
+        }
+      },
+      {
+        "id": "20",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 6,
+          "name": "core6",
+          "paths": {
+            "containment": "/alpha/rack0/node1/socket0/core6"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 20,
+          "unit": ""
+        }
+      },
+      {
+        "id": "21",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 7,
+          "name": "core7",
+          "paths": {
+            "containment": "/alpha/rack0/node1/socket0/core7"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 21,
+          "unit": ""
+        }
+      }
+    ]
+  }
+}

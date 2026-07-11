@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "resources": [
+    {"type": "node", "count": 1, "with": [
+      {"type": "slot", "count": 1, "label": "default", "with": [
+        {"type": "core", "count": 8}
+      ]}
+    ]}
+  ],
+  "tasks": [
+    {"command": ["lmp", "-i", "in.reaxff"], "slot": "default", "count": {"per_slot": 1}}
+  ],
+  "attributes": {
+    "system": {"duration": 3600, "job": {"name": "lammps-kokkos"}},
+    "user": {"image": "lammps:latest"}
+  },
+  "requires": {
+    "software": [
+      {"type": "lammps", "count": 1, "with": [{"type": "kokkos", "count": 1}]}
+    ]
+  }
+}

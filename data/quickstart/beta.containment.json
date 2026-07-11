@@ -1,0 +1,1854 @@
+{
+  "graph": {
+    "edges": [
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "0",
+        "target": "1"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "1",
+        "target": "2"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "2",
+        "target": "3"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "4"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "5"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "6"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "7"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "8"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "9"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "10"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "11"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "12"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "13"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "14"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "15"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "16"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "17"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "18"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "3",
+        "target": "19"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "1",
+        "target": "20"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "20",
+        "target": "21"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "22"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "23"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "24"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "25"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "26"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "27"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "28"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "29"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "30"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "31"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "32"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "33"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "34"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "35"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "36"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "21",
+        "target": "37"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "1",
+        "target": "38"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "38",
+        "target": "39"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "40"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "41"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "42"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "43"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "44"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "45"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "46"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "47"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "48"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "49"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "50"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "51"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "52"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "53"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "54"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "39",
+        "target": "55"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "1",
+        "target": "56"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "56",
+        "target": "57"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "58"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "59"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "60"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "61"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "62"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "63"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "64"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "65"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "66"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "67"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "68"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "69"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "70"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "71"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "72"
+      },
+      {
+        "metadata": {
+          "name": "contains",
+          "subsystem": "containment"
+        },
+        "source": "57",
+        "target": "73"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "0",
+        "metadata": {
+          "basename": "beta",
+          "exclusive": false,
+          "id": 0,
+          "name": "beta",
+          "paths": {
+            "containment": "/beta"
+          },
+          "properties": {
+            "handle": "slurm-operator://beta",
+            "manager": "slurm-operator"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "cluster",
+          "uniq_id": 0,
+          "unit": ""
+        }
+      },
+      {
+        "id": "1",
+        "metadata": {
+          "basename": "rack",
+          "exclusive": false,
+          "id": 0,
+          "name": "rack0",
+          "paths": {
+            "containment": "/beta/rack0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "rack",
+          "uniq_id": 1,
+          "unit": ""
+        }
+      },
+      {
+        "id": "2",
+        "metadata": {
+          "basename": "node",
+          "exclusive": false,
+          "id": 0,
+          "name": "node0",
+          "paths": {
+            "containment": "/beta/rack0/node0"
+          },
+          "rank": 0,
+          "size": 1,
+          "type": "node",
+          "uniq_id": 2,
+          "unit": ""
+        }
+      },
+      {
+        "id": "3",
+        "metadata": {
+          "basename": "socket",
+          "exclusive": false,
+          "id": 0,
+          "name": "socket0",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "socket",
+          "uniq_id": 3,
+          "unit": ""
+        }
+      },
+      {
+        "id": "4",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 0,
+          "name": "core0",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 4,
+          "unit": ""
+        }
+      },
+      {
+        "id": "5",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 1,
+          "name": "core1",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core1"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 5,
+          "unit": ""
+        }
+      },
+      {
+        "id": "6",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 2,
+          "name": "core2",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core2"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 6,
+          "unit": ""
+        }
+      },
+      {
+        "id": "7",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 3,
+          "name": "core3",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core3"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 7,
+          "unit": ""
+        }
+      },
+      {
+        "id": "8",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 4,
+          "name": "core4",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core4"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 8,
+          "unit": ""
+        }
+      },
+      {
+        "id": "9",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 5,
+          "name": "core5",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core5"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 9,
+          "unit": ""
+        }
+      },
+      {
+        "id": "10",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 6,
+          "name": "core6",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core6"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 10,
+          "unit": ""
+        }
+      },
+      {
+        "id": "11",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 7,
+          "name": "core7",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core7"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 11,
+          "unit": ""
+        }
+      },
+      {
+        "id": "12",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 8,
+          "name": "core8",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core8"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 12,
+          "unit": ""
+        }
+      },
+      {
+        "id": "13",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 9,
+          "name": "core9",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core9"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 13,
+          "unit": ""
+        }
+      },
+      {
+        "id": "14",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 10,
+          "name": "core10",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core10"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 14,
+          "unit": ""
+        }
+      },
+      {
+        "id": "15",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 11,
+          "name": "core11",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core11"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 15,
+          "unit": ""
+        }
+      },
+      {
+        "id": "16",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 12,
+          "name": "core12",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core12"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 16,
+          "unit": ""
+        }
+      },
+      {
+        "id": "17",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 13,
+          "name": "core13",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core13"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 17,
+          "unit": ""
+        }
+      },
+      {
+        "id": "18",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 14,
+          "name": "core14",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core14"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 18,
+          "unit": ""
+        }
+      },
+      {
+        "id": "19",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 15,
+          "name": "core15",
+          "paths": {
+            "containment": "/beta/rack0/node0/socket0/core15"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 19,
+          "unit": ""
+        }
+      },
+      {
+        "id": "20",
+        "metadata": {
+          "basename": "node",
+          "exclusive": false,
+          "id": 1,
+          "name": "node1",
+          "paths": {
+            "containment": "/beta/rack0/node1"
+          },
+          "rank": 1,
+          "size": 1,
+          "type": "node",
+          "uniq_id": 20,
+          "unit": ""
+        }
+      },
+      {
+        "id": "21",
+        "metadata": {
+          "basename": "socket",
+          "exclusive": false,
+          "id": 0,
+          "name": "socket0",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "socket",
+          "uniq_id": 21,
+          "unit": ""
+        }
+      },
+      {
+        "id": "22",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 0,
+          "name": "core0",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 22,
+          "unit": ""
+        }
+      },
+      {
+        "id": "23",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 1,
+          "name": "core1",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core1"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 23,
+          "unit": ""
+        }
+      },
+      {
+        "id": "24",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 2,
+          "name": "core2",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core2"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 24,
+          "unit": ""
+        }
+      },
+      {
+        "id": "25",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 3,
+          "name": "core3",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core3"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 25,
+          "unit": ""
+        }
+      },
+      {
+        "id": "26",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 4,
+          "name": "core4",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core4"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 26,
+          "unit": ""
+        }
+      },
+      {
+        "id": "27",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 5,
+          "name": "core5",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core5"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 27,
+          "unit": ""
+        }
+      },
+      {
+        "id": "28",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 6,
+          "name": "core6",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core6"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 28,
+          "unit": ""
+        }
+      },
+      {
+        "id": "29",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 7,
+          "name": "core7",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core7"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 29,
+          "unit": ""
+        }
+      },
+      {
+        "id": "30",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 8,
+          "name": "core8",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core8"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 30,
+          "unit": ""
+        }
+      },
+      {
+        "id": "31",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 9,
+          "name": "core9",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core9"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 31,
+          "unit": ""
+        }
+      },
+      {
+        "id": "32",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 10,
+          "name": "core10",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core10"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 32,
+          "unit": ""
+        }
+      },
+      {
+        "id": "33",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 11,
+          "name": "core11",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core11"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 33,
+          "unit": ""
+        }
+      },
+      {
+        "id": "34",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 12,
+          "name": "core12",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core12"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 34,
+          "unit": ""
+        }
+      },
+      {
+        "id": "35",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 13,
+          "name": "core13",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core13"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 35,
+          "unit": ""
+        }
+      },
+      {
+        "id": "36",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 14,
+          "name": "core14",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core14"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 36,
+          "unit": ""
+        }
+      },
+      {
+        "id": "37",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 15,
+          "name": "core15",
+          "paths": {
+            "containment": "/beta/rack0/node1/socket0/core15"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 37,
+          "unit": ""
+        }
+      },
+      {
+        "id": "38",
+        "metadata": {
+          "basename": "node",
+          "exclusive": false,
+          "id": 2,
+          "name": "node2",
+          "paths": {
+            "containment": "/beta/rack0/node2"
+          },
+          "rank": 2,
+          "size": 1,
+          "type": "node",
+          "uniq_id": 38,
+          "unit": ""
+        }
+      },
+      {
+        "id": "39",
+        "metadata": {
+          "basename": "socket",
+          "exclusive": false,
+          "id": 0,
+          "name": "socket0",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "socket",
+          "uniq_id": 39,
+          "unit": ""
+        }
+      },
+      {
+        "id": "40",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 0,
+          "name": "core0",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 40,
+          "unit": ""
+        }
+      },
+      {
+        "id": "41",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 1,
+          "name": "core1",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core1"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 41,
+          "unit": ""
+        }
+      },
+      {
+        "id": "42",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 2,
+          "name": "core2",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core2"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 42,
+          "unit": ""
+        }
+      },
+      {
+        "id": "43",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 3,
+          "name": "core3",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core3"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 43,
+          "unit": ""
+        }
+      },
+      {
+        "id": "44",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 4,
+          "name": "core4",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core4"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 44,
+          "unit": ""
+        }
+      },
+      {
+        "id": "45",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 5,
+          "name": "core5",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core5"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 45,
+          "unit": ""
+        }
+      },
+      {
+        "id": "46",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 6,
+          "name": "core6",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core6"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 46,
+          "unit": ""
+        }
+      },
+      {
+        "id": "47",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 7,
+          "name": "core7",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core7"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 47,
+          "unit": ""
+        }
+      },
+      {
+        "id": "48",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 8,
+          "name": "core8",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core8"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 48,
+          "unit": ""
+        }
+      },
+      {
+        "id": "49",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 9,
+          "name": "core9",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core9"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 49,
+          "unit": ""
+        }
+      },
+      {
+        "id": "50",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 10,
+          "name": "core10",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core10"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 50,
+          "unit": ""
+        }
+      },
+      {
+        "id": "51",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 11,
+          "name": "core11",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core11"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 51,
+          "unit": ""
+        }
+      },
+      {
+        "id": "52",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 12,
+          "name": "core12",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core12"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 52,
+          "unit": ""
+        }
+      },
+      {
+        "id": "53",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 13,
+          "name": "core13",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core13"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 53,
+          "unit": ""
+        }
+      },
+      {
+        "id": "54",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 14,
+          "name": "core14",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core14"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 54,
+          "unit": ""
+        }
+      },
+      {
+        "id": "55",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 15,
+          "name": "core15",
+          "paths": {
+            "containment": "/beta/rack0/node2/socket0/core15"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 55,
+          "unit": ""
+        }
+      },
+      {
+        "id": "56",
+        "metadata": {
+          "basename": "node",
+          "exclusive": false,
+          "id": 3,
+          "name": "node3",
+          "paths": {
+            "containment": "/beta/rack0/node3"
+          },
+          "rank": 3,
+          "size": 1,
+          "type": "node",
+          "uniq_id": 56,
+          "unit": ""
+        }
+      },
+      {
+        "id": "57",
+        "metadata": {
+          "basename": "socket",
+          "exclusive": false,
+          "id": 0,
+          "name": "socket0",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "socket",
+          "uniq_id": 57,
+          "unit": ""
+        }
+      },
+      {
+        "id": "58",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 0,
+          "name": "core0",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core0"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 58,
+          "unit": ""
+        }
+      },
+      {
+        "id": "59",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 1,
+          "name": "core1",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core1"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 59,
+          "unit": ""
+        }
+      },
+      {
+        "id": "60",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 2,
+          "name": "core2",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core2"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 60,
+          "unit": ""
+        }
+      },
+      {
+        "id": "61",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 3,
+          "name": "core3",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core3"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 61,
+          "unit": ""
+        }
+      },
+      {
+        "id": "62",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 4,
+          "name": "core4",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core4"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 62,
+          "unit": ""
+        }
+      },
+      {
+        "id": "63",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 5,
+          "name": "core5",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core5"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 63,
+          "unit": ""
+        }
+      },
+      {
+        "id": "64",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 6,
+          "name": "core6",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core6"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 64,
+          "unit": ""
+        }
+      },
+      {
+        "id": "65",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 7,
+          "name": "core7",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core7"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 65,
+          "unit": ""
+        }
+      },
+      {
+        "id": "66",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 8,
+          "name": "core8",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core8"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 66,
+          "unit": ""
+        }
+      },
+      {
+        "id": "67",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 9,
+          "name": "core9",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core9"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 67,
+          "unit": ""
+        }
+      },
+      {
+        "id": "68",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 10,
+          "name": "core10",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core10"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 68,
+          "unit": ""
+        }
+      },
+      {
+        "id": "69",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 11,
+          "name": "core11",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core11"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 69,
+          "unit": ""
+        }
+      },
+      {
+        "id": "70",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 12,
+          "name": "core12",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core12"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 70,
+          "unit": ""
+        }
+      },
+      {
+        "id": "71",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 13,
+          "name": "core13",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core13"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 71,
+          "unit": ""
+        }
+      },
+      {
+        "id": "72",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 14,
+          "name": "core14",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core14"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 72,
+          "unit": ""
+        }
+      },
+      {
+        "id": "73",
+        "metadata": {
+          "basename": "core",
+          "exclusive": false,
+          "id": 15,
+          "name": "core15",
+          "paths": {
+            "containment": "/beta/rack0/node3/socket0/core15"
+          },
+          "rank": -1,
+          "size": 1,
+          "type": "core",
+          "uniq_id": 73,
+          "unit": ""
+        }
+      }
+    ]
+  }
+}

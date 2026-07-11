@@ -1,0 +1,100 @@
+{
+ "graph": {
+  "nodes": [
+   {
+    "id": "0",
+    "metadata": {
+     "basename": "cluster",
+     "exclusive": false,
+     "id": 0,
+     "name": "cluster0",
+     "paths": {
+      "containment": "/alpha-sw"
+     },
+     "rank": -1,
+     "size": 1,
+     "type": "cluster",
+     "uniq_id": 0,
+     "unit": ""
+    }
+   },
+   {
+    "id": "1",
+    "metadata": {
+     "basename": "lammps",
+     "exclusive": false,
+     "id": 1,
+     "name": "lammps1",
+     "paths": {
+      "containment": "/alpha-sw/lammps"
+     },
+     "rank": -1,
+     "size": 1,
+     "type": "lammps",
+     "uniq_id": 1,
+     "unit": ""
+    }
+   },
+   {
+    "id": "2",
+    "metadata": {
+     "basename": "kokkos",
+     "exclusive": false,
+     "id": 2,
+     "name": "kokkos2",
+     "paths": {
+      "containment": "/alpha-sw/lammps/kokkos"
+     },
+     "rank": -1,
+     "size": 1,
+     "type": "kokkos",
+     "uniq_id": 2,
+     "unit": ""
+    }
+   },
+   {
+    "id": "3",
+    "metadata": {
+     "basename": "gromacs",
+     "exclusive": false,
+     "id": 3,
+     "name": "gromacs3",
+     "paths": {
+      "containment": "/alpha-sw/gromacs"
+     },
+     "rank": -1,
+     "size": 1,
+     "type": "gromacs",
+     "uniq_id": 3,
+     "unit": ""
+    }
+   }
+  ],
+  "edges": [
+   {
+    "source": "0",
+    "target": "1",
+    "metadata": {
+     "name": "contains",
+     "subsystem": "containment"
+    }
+   },
+   {
+    "source": "1",
+    "target": "2",
+    "metadata": {
+     "name": "contains",
+     "subsystem": "containment"
+    }
+   },
+   {
+    "source": "0",
+    "target": "3",
+    "metadata": {
+     "name": "contains",
+     "subsystem": "containment"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "graph": {
+  "nodes": [
+   {
+    "id": "0",
+    "metadata": {
+     "basename": "cluster",
+     "exclusive": false,
+     "id": 0,
+     "name": "cluster0",
+     "paths": {
+      "containment": "/gamma-sw"
+     },
+     "rank": -1,
+     "size": 1,
+     "type": "cluster",
+     "uniq_id": 0,
+     "unit": ""
+    }
+   },
+   {
+    "id": "1",
+    "metadata": {
+     "basename": "gromacs",
+     "exclusive": false,
+     "id": 1,
+     "name": "gromacs1",
+     "paths": {
+      "containment": "/gamma-sw/gromacs"
+     },
+     "rank": -1,
+     "size": 1,
+     "type": "gromacs",
+     "uniq_id": 1,
+     "unit": ""
+    }
+   },
+   {
+    "id": "2",
+    "metadata": {
+     "basename": "amber",
+     "exclusive": false,
+     "id": 2,
+     "name": "amber2",
+     "paths": {
+      "containment": "/gamma-sw/amber"
+     },
+     "rank": -1,
+     "size": 1,
+     "type": "amber",
+     "uniq_id": 2,
+     "unit": ""
+    }
+   }
+  ],
+  "edges": [
+   {
+    "source": "0",
+    "target": "1",
+    "metadata": {
+     "name": "contains",
+     "subsystem": "containment"
+    }
+   },
+   {
+    "source": "0",
+    "target": "2",
+    "metadata": {
+     "name": "contains",
+     "subsystem": "containment"
+    }
+   }
+  ]
+ }
+}
