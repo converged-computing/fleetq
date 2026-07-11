@@ -4,7 +4,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  pull_request:
 
 permissions:
   contents: read
@@ -14,18 +13,42 @@ env:
 
 jobs:
   fluxion:
-    name: test (real Fluxion, -tags fluxion)
+    name: real matcher (-tags fluxion)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: pull image
-        run: docker pull "$FLUX_IMAGE"
-
-      - name: fluxion test suite
+      - run: docker pull "$FLUX_IMAGE"
+      - name: make fluxion-test
         run: |
           docker run --rm -v "$PWD":/src -w /src "$FLUX_IMAGE" bash -lc '
             export PATH=$PATH:/usr/local/go/bin
             go version
-            make fluxion-test    # CGO_CFLAGS/LDFLAGS + LD_LIBRARY_PATH come from the Makefile
+            make fluxion-test
+          '
+
+  fluxcore:
+    name: real dispatch (-tags fluxcore)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker pull "$FLUX_IMAGE"
+      - name: make fluxcore-test   # spins up a broker via `flux start` and submits real jobs
+        run: |
+          docker run --rm -v "$PWD":/src -w /src "$FLUX_IMAGE" bash -lc '
+            export PATH=$PATH:/usr/local/go/bin
+            make fluxcore-test
+          '
+
+  all:
+    name: combined build (-tags fluxion,fluxcore)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker pull "$FLUX_IMAGE"
+      - name: make all   # links the real matcher AND libflux dispatch into one binary
+        run: |
+          docker run --rm -v "$PWD":/src -w /src "$FLUX_IMAGE" bash -lc '
+            export PATH=$PATH:/usr/local/go/bin
+            make all
+            test -x bin/fleetq
           '

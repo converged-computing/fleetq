@@ -12,8 +12,12 @@ BUILDENVVAR = CGO_CFLAGS="-I$(FLUX_SCHED_ROOT)" \
     -lflux-idset -lstdc++ -lczmq -ljansson -lhwloc -lboost_system -lflux-hostlist \
     -lboost_graph -lyaml-cpp"
 
-.PHONY: all data test build run run-memory fluxion fluxion-test bench fluxion-bench db-up db-down clean
-all: build
+.PHONY: all data test build run run-memory fluxion fluxion-test fluxcore fluxcore-test bench fluxion-bench db-up db-down clean
+.DEFAULT_GOAL := build
+
+all:             ## full build: REAL matcher + REAL flux dispatch (-tags fluxion,fluxcore); needs the flux-sched devcontainer
+	go get $(REAPI_BINDINGS)
+	mkdir -p bin && export $(BUILDENVVAR); go build -tags "fluxion fluxcore" -ldflags '-w' -o bin/fleetq ./cmd/fleetq
 
 data:            ## regenerate the JGF dataset
 	go run ./cmd/fleetq-datagen
@@ -40,6 +44,12 @@ fluxion:         ## REAL Fluxion build (inside .devcontainer); still river+Postg
 fluxion-test:    ## tests with the real matcher compiled in
 	go get $(REAPI_BINDINGS)
 	export $(BUILDENVVAR); go test -tags fluxion ./...
+
+fluxcore:        ## build with REAL libflux dispatch (-tags fluxcore); k8s dispatch already works without it
+	mkdir -p bin && go build -tags fluxcore -ldflags '-w' -o bin/fleetq ./cmd/fleetq
+
+fluxcore-test:   ## test libflux dispatch against a live broker (needs flux)
+	flux start bash -c 'go test -tags fluxcore -run Flux -v ./pkg/cluster/'
 
 bench:           ## SimMatcher match benchmarks (offline, no toolchain)
 	@go test -run x -bench . -benchmem ./pkg/matcher/ > /tmp/fleetq-bench.txt 2>&1 || (cat /tmp/fleetq-bench.txt; exit 1)

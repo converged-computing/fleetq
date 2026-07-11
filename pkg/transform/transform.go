@@ -51,7 +51,7 @@ func BuildPrompt(js jobspec.Jobspec, target graph.ClusterGraph) string {
 	case graph.SlurmOperator:
 		b.WriteString("Emit a Slurm job for the slurm-operator.\n")
 	case graph.FluxURI:
-		b.WriteString("Emit a flux submit command line (headless: submit, not run).\n")
+		b.WriteString("Emit an RFC 25 jobspec (JSON) — flux is jobspec-native.\n")
 	}
 	return b.String()
 }
@@ -63,12 +63,14 @@ type Stub struct{}
 func (Stub) Transform(js jobspec.Jobspec, target graph.ClusterGraph) (cluster.Content, error) {
 	switch target.Manager {
 	case graph.FluxURI:
-		// Native flux submit — the identity translation, no manifest. Each
-		// command token is shell-quoted so multi-word args survive intact
-		// (an unquoted join is the dispatch paper's flag-mangling failure).
-		cmd := fmt.Sprintf("flux submit -N %d -n %d %s",
-			js.Nodes(), js.TasksTotal(), shJoin(js.Command()))
-		return cluster.Content{Kind: "command", Payload: cmd}, nil
+		// Flux is jobspec-native: the transform is (near) identity — hand the
+		// rendered RFC jobspec straight to the driver, which submits it via
+		// flux_job_submit. No shell command to mangle.
+		spec, err := js.ToFluxSpec()
+		if err != nil {
+			return cluster.Content{}, err
+		}
+		return cluster.Content{Kind: "jobspec", Payload: spec}, nil
 	case graph.K8sJob:
 		return cluster.Content{Kind: "manifest", Payload: k8sJob(js, target)}, nil
 	case graph.FluxOperator:

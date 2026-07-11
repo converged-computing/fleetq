@@ -312,12 +312,26 @@ make fluxion-bench  # real Fluxion match benchmarks
 make run            # serve with real Fluxion selection
 ```
 
-Outside the devcontainer the default targets (`make build`, `make test`,
-`make bench`) use the SimMatcher and need no toolchain.
+### To test flux-core
 
-`make kind-up` / `make kind-down` create and delete a local Kubernetes cluster
-(`.devcontainer/kind-config.yaml`, context `kind-fleetq`) to dispatch k8s jobs
-to; see §6.
+```bash
+make fluxcore
+flux start bash -c '
+  ./bin/fleetq serve &
+  sleep 1
+
+  ./bin/fleetq managers        # flux-uri -> REAL DISPATCH: yes  (proves libflux is linked)
+
+  SECRET=$(./bin/fleetq cluster register --name hpc --manager flux-uri --config uri=local | sed -n "s/^secret: //p")
+  export FLEETQ_SECRET=$SECRET
+  ./bin/fleetq cluster subsystem from-flux --cluster hpc
+
+  ./bin/fleetq submit --file examples/job-hostname.json
+  sleep 2
+  ./bin/fleetq jobs            # HANDLE is a real ƒ jobid; STATE COMPLETED; NOTE "finished (exit 0)"
+'
+```
+
 
 ### TODO:
 
