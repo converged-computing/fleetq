@@ -1,0 +1,48 @@
+name: CI
+
+# The default pure-Go build: SimMatcher, emulation, and REAL Kubernetes dispatch
+# (client-go needs no CGO). This is the gate for every PR. The real-Fluxion /
+# libflux builds live in fluxion.yml because they need the flux-sched image.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: build & test (pure Go)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod   # single source of truth for the Go version
+          cache: true
+
+      - name: gofmt
+        run: |
+          unformatted=$(gofmt -l .)
+          if [ -n "$unformatted" ]; then
+            echo "These files are not gofmt-clean:"; echo "$unformatted"
+            exit 1
+          fi
+
+      - name: go vet
+        run: go vet ./...
+
+      - name: build
+        run: go build ./...
+
+      - name: test (race + fresh, no cache)
+        run: go test -race -count=1 ./...
+
+      - name: modules are tidy
+        run: |
+          go mod tidy
+          git diff --exit-code -- go.mod go.sum \
+            || (echo "go.mod/go.sum not tidy — run 'go mod tidy' and commit"; exit 1)

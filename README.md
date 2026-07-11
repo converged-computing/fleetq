@@ -2,13 +2,15 @@
 
 > a fleet-level queue manager for descriptive dispatch
 
+![docs/img/fleetq.png](docs/img/fleetq.png)
+
 A prototype of the `text prompt → select → transform → dispatch → monitor`
 pipeline, built with Fluxion. `fleetq` is the fleet-level analog of Flux's
 `qmanager`: it allows for registration and query against **fleet resource graphs** 
 (whole clusters as vertices) to pick a target cluster. After candidate scoring
 and selection, each jobspec is transformed and dispatched.
 
-## 1. Quickstart
+## Quickstart
 
 Everything you give the server is **JGF** (resource graphs) or a **jobspec**.
 Since Fluxion has limitations for subsystems and query, we use an approach that
@@ -242,9 +244,6 @@ The **jobspec is the interlingua** (`pkg/jobspec`) — a real Flux jobspec
 out of it.
 
 ## Concepts
-
-```markdown
-## 4. Concepts (the pieces)
 
 - **Fleet & JGF graphs.** Each cluster is a set of flux-sched resource graphs — countable containment plus descriptive capability trees like software or network.
 - **Matcher.** Checks which clusters can satisfy every requested subsystem, then allocates the countable ones on the chosen cluster; Fluxion for real, a pure-Go double offline.

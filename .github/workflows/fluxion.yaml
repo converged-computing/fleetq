@@ -1,0 +1,31 @@
+name: Fluxion
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  pull_request:
+
+permissions:
+  contents: read
+
+env:
+  FLUX_IMAGE: vanessa/fluxion-quantum:latest
+
+jobs:
+  fluxion:
+    name: test (real Fluxion, -tags fluxion)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: pull image
+        run: docker pull "$FLUX_IMAGE"
+
+      - name: fluxion test suite
+        run: |
+          docker run --rm -v "$PWD":/src -w /src "$FLUX_IMAGE" bash -lc '
+            export PATH=$PATH:/usr/local/go/bin
+            go version
+            make fluxion-test    # CGO_CFLAGS/LDFLAGS + LD_LIBRARY_PATH come from the Makefile
+          '
