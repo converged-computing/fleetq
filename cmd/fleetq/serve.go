@@ -40,10 +40,14 @@ func runServe(args []string) error {
 	// carry connection metadata, using the backend driver for their manager.
 	emuCfg := cluster.EmulatorConfig{Pending: 300 * time.Millisecond, Run: 1200 * time.Millisecond}
 	drivers := cluster.NewEmulatedRegistry(emuCfg)
-	realDrivers := cluster.NewRegistry(
-		cluster.NewFluxDriver(), // flux-uri: reaches each cluster via its Config["uri"]
-		cluster.NewK8sDriver(),  // k8s-job: reaches each cluster via Config kubeconfig/context
-	)
+	// Real dispatch: Kubernetes is always available (client-go, pure Go). Flux
+	// dispatch links libflux and is compiled in only with -tags fluxcore;
+	// otherwise realFluxDriver() is nil and flux stays emulated-only.
+	real := []cluster.Driver{cluster.NewK8sDriver()}
+	if fd := realFluxDriver(); fd != nil {
+		real = append(real, fd)
+	}
+	realDrivers := cluster.NewRegistry(real...)
 	logger.Println("dispatch: emulated by default; register a cluster with --config (flux: uri=local|ssh://…) to dispatch for real")
 
 	// Backend selection (see README): memory (default), sqlite, postgres.

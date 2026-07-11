@@ -116,16 +116,17 @@ func TestInjectedTimeoutFailsAndFrees(t *testing.T) {
 	}
 }
 
-func TestMalformedCommandRejected(t *testing.T) {
-	// A command carrying the paper's concatenation bug must be rejected by the
-	// emulator's sanity check rather than reported as running.
-	if note, ok := clusterSanity(cluster.Content{Kind: "command", Payload: "flux submit lmp -in.reaxff"}); ok {
+func TestMalformedJobspecRejected(t *testing.T) {
+	// Flux is jobspec-native (no shell command line), so the paper's flag-
+	// concatenation bug can't arise; the emulator instead rejects a malformed
+	// jobspec rather than reporting it as running.
+	if note, ok := clusterSanity(cluster.Content{Kind: "jobspec", Payload: "not a jobspec"}); ok {
 		t.Fatalf("expected rejection, got ok with note %q", note)
 	}
 }
 
 // clusterSanity exercises the exported behavior indirectly via a submit on a
-// flux-uri emulated driver (command kind), asserting it lands in Failed.
+// flux-uri emulated driver (jobspec kind), asserting it lands in Failed.
 func clusterSanity(c cluster.Content) (string, bool) {
 	d := cluster.NewEmulatedDriver(graph.FluxURI, cluster.EmulatorConfig{})
 	h, err := d.Submit(graph.ClusterGraph{Manager: graph.FluxURI}, c)

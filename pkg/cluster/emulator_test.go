@@ -33,9 +33,9 @@ func TestPerBackendValidation(t *testing.T) {
 		{"k8s job ok", graph.K8sJob, cluster.Content{Kind: "manifest", Payload: "kind: Job\n image: img\n command: [x]\n"}, false},
 		{"k8s job no image", graph.K8sJob, cluster.Content{Kind: "manifest", Payload: "kind: Job\n command: [x]\n"}, true},
 		{"slurm ok", graph.SlurmOperator, cluster.Content{Kind: "manifest", Payload: "kind: SlurmJob\n nodes: 2\n ntasks: 4\n image: img\n"}, false},
-		{"flux submit ok", graph.FluxURI, cluster.Content{Kind: "command", Payload: "flux submit -N 2 -n 8 lmp -i in.reaxff"}, false},
-		{"flux submit concat bug", graph.FluxURI, cluster.Content{Kind: "command", Payload: "flux submit -N 2 -n 8 lmp -in.reaxff"}, true},
-		{"flux submit missing counts", graph.FluxURI, cluster.Content{Kind: "command", Payload: "flux submit lmp"}, true},
+		{"flux jobspec ok", graph.FluxURI, cluster.Content{Kind: "jobspec", Payload: `{"version":1,"resources":[{"type":"node","count":1}],"tasks":[{"command":["hostname"]}]}`}, false},
+		{"flux jobspec not json", graph.FluxURI, cluster.Content{Kind: "jobspec", Payload: "flux submit lmp"}, true},
+		{"flux jobspec missing tasks", graph.FluxURI, cluster.Content{Kind: "jobspec", Payload: `{"version":1,"resources":[{"type":"node","count":1}]}`}, true},
 	}
 	for _, tc := range cases {
 		t.Run(tc.name, func(t *testing.T) {
@@ -51,7 +51,7 @@ func TestPerBackendValidation(t *testing.T) {
 // Wrong content KIND for a backend is refused by Submit itself.
 func TestBackendRefusesWrongKind(t *testing.T) {
 	d := cluster.NewEmulatedDriver(graph.K8sJob, cluster.EmulatorConfig{})
-	if _, err := d.Submit(graph.ClusterGraph{}, cluster.Content{Kind: "command", Payload: "flux submit -N 1 -n 1 x"}); err == nil {
+	if _, err := d.Submit(graph.ClusterGraph{}, cluster.Content{Kind: "jobspec", Payload: "{}"}); err == nil {
 		t.Fatal("k8s backend must refuse a command")
 	}
 }

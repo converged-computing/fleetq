@@ -1,6 +1,7 @@
 package cluster
 
 import (
+	"encoding/json"
 	"fmt"
 	"strings"
 	"sync"
@@ -232,24 +233,24 @@ func (k8sJobBackend) Validate(c Content) (string, bool) {
 type fluxURIBackend struct{}
 
 func (fluxURIBackend) Manager() graph.ManagerType { return graph.FluxURI }
-func (fluxURIBackend) WantKind() string           { return "command" }
+func (fluxURIBackend) WantKind() string           { return "jobspec" }
 func (fluxURIBackend) NewHandle(seq int) string   { return fmt.Sprintf("fluxjob-f%X", seq*7919) }
 func (fluxURIBackend) Lifecycle(c EmulatorConfig) Plan {
 	return lifecycle(c, "SCHED", "RUN", "INACTIVE (exit 0)")
 }
 func (fluxURIBackend) Validate(c Content) (string, bool) {
-	if c.Kind != "command" {
-		return "flux-uri expects a command", false
+	if c.Kind != "jobspec" {
+		return "flux-uri expects a jobspec", false
 	}
-	if !strings.Contains(c.Payload, "flux submit") {
-		return "not a 'flux submit' command", false
+	var spec struct {
+		Resources json.RawMessage `json:"resources"`
+		Tasks     json.RawMessage `json:"tasks"`
 	}
-	// The paper's exact bug: input flag concatenated with the filename.
-	if strings.Contains(c.Payload, "-in.") {
-		return "malformed argument: input flag concatenated with filename (e.g. -in.reaxff)", false
+	if err := json.Unmarshal([]byte(c.Payload), &spec); err != nil {
+		return "jobspec is not valid JSON", false
 	}
-	if !strings.Contains(c.Payload, "-N ") || !strings.Contains(c.Payload, "-n ") {
-		return "flux submit missing -N/-n node and task counts", false
+	if len(spec.Resources) == 0 || len(spec.Tasks) == 0 {
+		return "jobspec missing resources/tasks", false
 	}
 	return "", true
 }
